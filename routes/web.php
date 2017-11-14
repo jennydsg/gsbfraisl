@@ -30,6 +30,13 @@ Route::get('/saisirFraisForfait', 'FraisForfaitController@saisirFraisForfait');
 //saisirFrais
 Route::post('/saisirFraisForfait', 'FraisForfaitController@validerFraisForfait');
 
+// Afficher formulaire de la modification du mot de passe
+Route::get('/modifMdp', 'modifMdpController@affFormModifMdp');
+
+// Modification mot de passe
+Route::post('/modifMdp', 'modifMdpController@verifMdp');
+
+
 // Afficher la liste des fiches de Frais du visiteur connecté
 Route::get('/getListeFrais', 'VoirFraisController@getFraisVisiteur');
 
